@@ -1,0 +1,231 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+    font-size: var(--normal-font-size);
+}
+
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --first-color:#1a73e8;
+    --input-color:#808688;
+    --border-color:#dadce0;
+    --red-color:#E53E31;
+    --yellow-color:#FCC421;
+    --green-color:#259745;
+    --black-color:#060219;
+    --normal-font-size:1rem;
+    --small-font-size:.75rem;
+}
+
+h1{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h2{
+    color: var(--black-color);
+    font-weight: 300;
+    font-size: 2em;
+    text-align: center;
+    margin-top: -30px;
+}
+
+h3{
+color: #253039;
+font-weight: 400;
+text-align: center;
+margin-top: 20px;
+}
+
+.texto_p{
+    color: var(--first-color);
+    font-weight: 500;
+    margin-top: 9px;
+}
+
+.texto_saiba{
+color: var(--first-color);
+font-weight: 500;
+cursor: pointer;
+}
+
+.text_p2{
+color: var(--input-color);
+font-size: .90rem;
+margin-top: 50px;
+}
+
+.texto_g{
+color:var(--first-color);
+font-size: 2rem;
+}
+
+.texto_g2{
+    color:var(--first-color);
+}
+
+.texto_o{
+color: var(--red-color);
+}
+
+.texto_o2{
+    color: var(--yellow-color);
+}
+
+.texto_l{
+  color: var(--green-color);
+}
+
+.texto_e{
+    color: var(--red-color);
+}
+
+.texto_portugues{
+    color: var(--black-color);
+    font-size: .96em;
+    font-weight: 300;
+    margin-left: 88px;
+    margin-top: -20px;
+}
+
+.texto_ajuda{
+    margin-left: 360px;
+    margin-top: -32px;
+    font-size: 14px;
+    color: var(--input-color);
+    font-weight: 500;
+}
+
+.texto_privacidade{
+    margin-left: 420px;
+    font-size: 14px;
+    margin-top: -32px;
+    color: var(--input-color);
+    font-weight: 500;
+}
+
+.texto_termos{
+    margin-left: 540px;
+    font-size: 14px;
+    margin-top: -32px;
+    color: var(--input-color);
+    font-weight: 500;
+}
+
+img{
+    width: 8px;
+    margin-top: -28px;
+    margin-left: 220px;
+    position: absolute;
+}
+
+.form1{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+li{
+    list-style: none;
+    margin-top: 80px;
+    position: absolute;
+}
+
+a{
+    text-decoration: none;
+    color: var(--first-color);
+}
+
+.form{
+    width: 500px;
+    padding: 4rem;
+    border-radius: .5rem;
+    border: 1px solid var(--border-color);
+}
+
+.form_title{
+font-weight: 500;
+margin-bottom: 3rem;
+margin-top: -30px;
+}
+
+.form_div{
+    position: relative;
+    height: 48px;
+    margin-bottom: 1.5rem;
+}
+
+.form_input{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+font-size: var(--normal-font-size);
+border: 1px solid var(--border-color);
+border-radius: .2rem;
+outline: none;
+padding: 1rem;
+background: none;
+z-index: 1;
+margin-top: 20px;
+}
+
+.form_label{
+position: absolute;
+left: 1rem;
+top: 1rem;
+padding: 0 .25rem;
+background: #fff;
+color: var(--input-color);
+font-size:var(--normal-font-size);
+transition: .3s;
+margin-top: 1rem;
+}
+
+.form_button{
+display:block;
+margin-left: auto;
+padding: .75rem 2rem;
+outline: none;
+border: none;
+background-color: var(--first-color);
+color: #fff;
+font-size: var(--normal-font-size);
+font-weight: 600;
+border-radius: .2rem;
+cursor: pointer;
+margin-top: 90px;
+transition: .3s;
+}
+
+.form_button:hover{
+    box-shadow: 0 10px 36px rgba(0,0, 0,.15);
+}
+
+.form_input:focus + .form_label{
+    top: -.5rem;
+    left: .8rem;
+    color: var(--first-color);
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    z-index: 10;
+}
+
+.form_input:not(:placeholder-shown).form_input:not(:focus)+ .form_label{
+    top: -.5rem;
+    left: .8rem;
+    color: var(--first-color);
+    font-weight: 500;
+    z-index: 10;
+}
+
+.form_input:focus{
+    border: 1.5px solid var(--first-color);
+}
